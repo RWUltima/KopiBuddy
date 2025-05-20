@@ -1,4 +1,4 @@
-// Your KopiBuddy JavaScript code goes herelet drink = '', sugar = '', strength = '', milkType = '', temp = '', note = '';
+let drink = '', sugar = '', strength = '', milkType = '', temp = '', note = '';
 const summary = [];
 
 function nextStep(selectedDrink) {
