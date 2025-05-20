@@ -4,7 +4,7 @@ const summary = [];
 function nextStep(selectedDrink) {
   drink = selectedDrink.toLowerCase();
 
-  if (drink === 'kopi' || drink === 'teh') {
+   if (['kopi', 'teh', 'milo'].includes(drink)) {
     showStep('step2'); // start custom flow
   } else {
     alert(`${selectedDrink} flow is not implemented yet. Only Kopi and Teh are supported for now.`);
