@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KopiBuddy</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 style="font-family: 'Quicksand', sans-serif; color: #6a4c93; font-size: 2.5rem;">☕ KopiBuddy</h1>
+
+  <div id="wizard">
+    <div class="step active" id="step1">
+      <h2>Select Drink</h2>
+      <button class="option-btn" onclick="nextStep('Kopi')">
+        ☕<br/><span>Kopi</span>
+      </button>
+      <button class="option-btn" onclick="nextStep('Teh')">
+        🍵<br/><span>Teh</span>
+      </button>
+      <button class="option-btn" onclick="nextStep('Milo')">
+        🧃<br/><span>Milo</span>
+      </button>
+      <button class="option-btn" onclick="askSoftDrink()">
+        🥤<br/><span>Soft Drink</span>
+      </button>
+    </div>
+    <div class="step" id="step2">
+  <h2>Select Sugar Level</h2>
+  <button class="option-btn" onclick="setSugar('kosong')">
+    <span class="emoji">❌</span>
+    No Sugar (Kosong)
+  </button>
+  <button class="option-btn" onclick="setSugar('siu dai')">
+    <span class="emoji">🍬</span>
+    Less Sugar (Siu Dai)
+  </button>
+  <button class="option-btn" onclick="setSugar('normal')">
+    <span class="emoji">🍬🍬</span>
+    Normal
+  </button>
+  <button class="option-btn" onclick="setSugar('ga dai')">
+    <span class="emoji">🍬🍬🍬</span>
+    More Sugar (Ga Dai)
+  </button>
+</div>
+    <div class="step" id="step3">
+  <h2>Select Strength</h2>
+  <button class="option-btn" onclick="setStrength('po')">
+    <span class="emoji">💪</span>
+    Weak (Po)</button>
+  <button class="option-btn" onclick="setStrength('normal')">
+     <span class="emoji">💪💪</span>
+     Normal</button>
+  <button class="option-btn" onclick="setStrength('gau')">
+    <span class="emoji">💪💪💪</span>
+    Strong (Gau)</button>
+  <button class="option-btn" onclick="setStrength('di lo')">
+    <span class="emoji">🦾</span>
+    Stronger (Di Lo)</button>
+</div>
+    <div class="step" id="step4">
+  <h2>Select Milkyness</h2>
+  <button class="option-btn" onclick="setMilkType('o')">No Milk (O)</button>
+  <button class="option-btn" onclick="setMilkType('condensed')">Condensed Milk</button>
+  <button class="option-btn" onclick="setMilkType('c')">Evaporated Milk (C)</button>
+</div>
+    <div class="step" id="step5">
+  <h2>Select Temperature</h2>
+  <button class="option-btn" onclick="setTemp('hot')">Warm</button>
+  <button class="option-btn" onclick="setTemp('pua sio')">Lukewarm (Pua Sio)</button>
+  <button class="option-btn" onclick="setTemp('peng')">Iced (Peng)</button>
+</div>
+    <div class="step" id="step6">
+      <h2>Custom Note</h2>
+      <input type="text" id="customNote" placeholder="e.g. extra ice" />
+      <br/><br/>
+      <button class="option-btn" onclick="addToSummary()">Add to Order</button>
+    </div>
+    <div class="step" id="softDrinkInputStep">
+      <h2>Enter Soft Drink Name</h2>
+      <input type="text" id="softDrinkName" placeholder="e.g. Coke Zero" />
+      <br/><br/>
+      <button class="option-btn" onclick="finalizeSoftDrinkManual()">Add to Order</button>
+    </div>
+  </div>
+
+  <div id="summary">
+    <h2>Order Summary</h2>
+    <div id="orders"></div>
+    <button id="copyBtn" onclick="copySummary()">Copy to WhatsApp</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

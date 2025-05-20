@@ -1,0 +1,129 @@
+STYLE.CSS
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fefae0;
+  padding: 20px;
+  text-align: center;
+  color: #4b4b4b;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #bc6c25;
+}
+
+h2 {
+  color: #606c38;
+}
+
+.step {
+  display: none;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.step.active {
+  display: block;
+}
+
+#wizard {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.option-btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  background-color: #faedcd;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s;
+}
+
+.option-btn:hover {
+  transform: scale(1.05);
+  background-color: #d4a373;
+  color: #fff;
+}
+
+#customNote {
+  padding: 10px;
+  width: 60%;
+  border: 2px solid #ccd5ae;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+#summary {
+  margin-top: 40px;
+  padding: 20px;
+  background: #fefae0;
+  border: 2px dashed #d4a373;
+  border-radius: 12px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.order-item {
+  background-color: #fff3cd;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: #ff6b6b;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.delete-btn:hover {
+  background: #e03131;
+}
+
+#copyBtn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #a3cfbb;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#copyBtn:hover {
+  background: #76c893;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.emoji {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
