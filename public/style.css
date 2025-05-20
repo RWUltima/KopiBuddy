@@ -172,3 +172,28 @@ h2 {
   }
 }
 
+/* Default: desktop (emoji above text) */
+.option-btn {
+  flex-direction: column;
+}
+
+/* Mobile: emoji left, label right */
+@media (max-width: 600px) {
+  .option-btn {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px 14px;
+    width: 95%;
+    height: auto;
+  }
+
+  .emoji.left {
+    margin: 0 12px 0 0;
+    font-size: 1.4rem;
+  }
+
+  .label {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
