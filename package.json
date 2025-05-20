@@ -1,18 +1,15 @@
 {
-  "name": "techup-sample-blog",
+  "name": "kopibuddy",
   "version": "1.0.0",
-  "description": "Sample Blog webapp for TechUp",
-  "main": "index.js",
+  "description": "KopiBuddy ordering app",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^5.11.0",
-    "dotenv": "^16.4.5",
-    "ejs": "^3.1.9",
-    "express": "^4.19.1"
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
