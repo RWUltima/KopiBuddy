@@ -8,7 +8,7 @@ function nextStep(selectedDrink) {
     showStep('step2'); // start custom flow
   } else {
     alert(`${selectedDrink} flow is not implemented yet. Only Kopi and Teh are supported for now.`);
-    resetWizard();
+    resetWizard(); 
   }
 }
 
@@ -51,7 +51,7 @@ function addToSummary() {
   note = document.getElementById('customNote').value.trim();
   let order = drink;
 
-  if (drink === 'kopi' || drink === 'teh') {
+  if (drink === 'kopi' || drink === 'teh' || drink === 'milo') {
     if (milkType === 'o') order += ' o';
     else if (milkType === 'c') order += ' c';
     // Default condensed, no suffix
