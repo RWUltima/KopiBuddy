@@ -1,4 +1,3 @@
-STYLE.CSS
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #fefae0;
@@ -126,4 +125,48 @@ h2 {
   display: block;
   font-size: 1.4rem;
   margin-bottom: 4px;
+}
+.subtext {
+  font-size: 0.85em;
+  font-style: italic;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .button-grid {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .option-btn {
+    width: 45vw; /* use relative sizing */
+    height: 150px;
+    font-size: 14px;
+  }
+
+  .emoji {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+  }
+
+  .subtext {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .option-btn {
+    width: 90vw;
+    height: 140px;
+    font-size: 14px;
+  }
+
+  .emoji {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+  }
+
+  .subtext {
+    font-size: 0.75em;
+  }
 }

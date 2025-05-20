@@ -12,65 +12,101 @@
 
   <div id="wizard">
     <div class="step active" id="step1">
-      <h2>Select Drink</h2>
-      <button class="option-btn" onclick="nextStep('Kopi')">
-        ☕<br/><span>Kopi</span>
-      </button>
-      <button class="option-btn" onclick="nextStep('Teh')">
-        🍵<br/><span>Teh</span>
-      </button>
-      <button class="option-btn" onclick="nextStep('Milo')">
-        🧃<br/><span>Milo</span>
-      </button>
-      <button class="option-btn" onclick="askSoftDrink()">
-        🥤<br/><span>Soft Drink</span>
-      </button>
-    </div>
+  <h2>Select Drink</h2>
+  <div class="button-grid">
+    <button class="option-btn" onclick="nextStep('Kopi')">
+      <span class="emoji">☕</span>
+      <span>Kopi</span>
+    </button>
+    <button class="option-btn" onclick="nextStep('Teh')">
+      <span class="emoji">🍵</span>
+      <span>Teh</span>
+    </button>
+    <button class="option-btn" onclick="nextStep('Milo')">
+      <span class="emoji">🧃</span>
+      <span>Milo</span>
+    </button>
+    <button class="option-btn" onclick="askSoftDrink()">
+      <span class="emoji">🥤</span>
+      <span>Soft Drink</span>
+    </button>
+  </div>
+</div>
     <div class="step" id="step2">
   <h2>Select Sugar Level</h2>
-  <button class="option-btn" onclick="setSugar('kosong')">
-    <span class="emoji">❌</span>
-    No Sugar (Kosong)
-  </button>
-  <button class="option-btn" onclick="setSugar('siu dai')">
-    <span class="emoji">🍬</span>
-    Less Sugar (Siu Dai)
-  </button>
-  <button class="option-btn" onclick="setSugar('normal')">
-    <span class="emoji">🍬🍬</span>
-    Normal
-  </button>
-  <button class="option-btn" onclick="setSugar('ga dai')">
-    <span class="emoji">🍬🍬🍬</span>
-    More Sugar (Ga Dai)
-  </button>
+  <div class="button-grid">
+    <button class="option-btn" onclick="setSugar('kosong')">
+      <span class="emoji">❌</span>
+      <span>No Sugar<br><span class="subtext">Kosong</span></span>
+    </button>
+    <button class="option-btn" onclick="setSugar('siu dai')">
+      <span class="emoji">🍬</span>
+      <span>Less Sugar<br><span class="subtext">(Siu Dai)</span></span>
+    </button>
+    <button class="option-btn" onclick="setSugar('normal')">
+      <span class="emoji">🍬🍬</span>
+      <span>Normal</span>
+    </button>
+    <button class="option-btn" onclick="setSugar('ga dai')">
+      <span class="emoji">🍬🍬🍬</span>
+      <span>More Sugar<br><span class="subtext">(Ga Dai)</span></span>
+    </button>
+  </div>
 </div>
     <div class="step" id="step3">
   <h2>Select Strength</h2>
-  <button class="option-btn" onclick="setStrength('po')">
-    <span class="emoji">💪</span>
-    Weak (Po)</button>
-  <button class="option-btn" onclick="setStrength('normal')">
-     <span class="emoji">💪💪</span>
-     Normal</button>
-  <button class="option-btn" onclick="setStrength('gau')">
-    <span class="emoji">💪💪💪</span>
-    Strong (Gau)</button>
-  <button class="option-btn" onclick="setStrength('di lo')">
-    <span class="emoji">🦾</span>
-    Stronger (Di Lo)</button>
+  <div class="button-grid">
+    <button class="option-btn" onclick="setStrength('po')">
+      <span class="emoji">💪</span>
+      <span>Weak<br><span class="subtext">(Po)</span></span>
+    </button>
+    <button class="option-btn" onclick="setStrength('normal')">
+      <span class="emoji">💪💪</span>
+      <span>Normal</span>
+    </button>
+    <button class="option-btn" onclick="setStrength('gau')">
+      <span class="emoji">💪💪💪</span>
+      <span>Strong<br><span class="subtext">(Gau)</span></span>
+    </button>
+    <button class="option-btn" onclick="setStrength('di lo')">
+      <span class="emoji">🦾</span>
+      <span>Stronger<br><span class="subtext">(Di Lo)</span></span>
+    </button>
+  </div>
 </div>
     <div class="step" id="step4">
   <h2>Select Milkyness</h2>
-  <button class="option-btn" onclick="setMilkType('o')">No Milk (O)</button>
-  <button class="option-btn" onclick="setMilkType('condensed')">Condensed Milk</button>
-  <button class="option-btn" onclick="setMilkType('c')">Evaporated Milk (C)</button>
+  <div class="button-grid">
+    <button class="option-btn" onclick="setMilkType('o')">
+      <span class="emoji">❌</span>
+      <span>No Milk<br><span class="subtext">(O)</span></span>
+    </button>
+    <button class="option-btn" onclick="setMilkType('condensed')">
+      <span class="emoji">🍯</span>
+      <span>Condensed Milk</span>
+    </button>
+    <button class="option-btn" onclick="setMilkType('c')">
+      <span class="emoji">🥫</span>
+      <span>Evaporated Milk<br><span class="subtext">(C)</span></span>
+    </button>
+  </div>
 </div>
     <div class="step" id="step5">
   <h2>Select Temperature</h2>
-  <button class="option-btn" onclick="setTemp('hot')">Warm</button>
-  <button class="option-btn" onclick="setTemp('pua sio')">Lukewarm (Pua Sio)</button>
-  <button class="option-btn" onclick="setTemp('peng')">Iced (Peng)</button>
+  <div class="button-grid">
+    <button class="option-btn" onclick="setTemp('hot')">
+      <span class="emoji">🔥</span>
+      <span>Warm</span>
+    </button>
+    <button class="option-btn" onclick="setTemp('pua sio')">
+      <span class="emoji">🌞</span>
+      <span>Lukewarm<br><span class="subtext">(Pua Sio)</span></span>
+    </button>
+    <button class="option-btn" onclick="setTemp('peng')">
+      <span class="emoji">🧊</span>
+      <span>Iced<br><span class="subtext">(Peng)</span></span>
+    </button>
+  </div>
 </div>
     <div class="step" id="step6">
       <h2>Custom Note</h2>
@@ -95,3 +131,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+

@@ -79,18 +79,29 @@ function addToSummary() {
 function updateOrders() {
   const container = document.getElementById('orders');
   container.innerHTML = '';
-  summary.forEach((item, i) => {
+
+  // Group identical orders and count
+  const countMap = {};
+  summary.forEach(order => {
+    countMap[order] = (countMap[order] || 0) + 1;
+  });
+
+  Object.entries(countMap).forEach(([order, count], i) => {
     const div = document.createElement('div');
     div.className = 'order-item';
 
     const text = document.createElement('span');
-    text.textContent = `${i + 1}. ${item}`;
+    text.textContent = `${i + 1}. ${order}${count > 1 ? ` x${count}` : ''}`;
 
     const btn = document.createElement('button');
     btn.textContent = '❌';
     btn.className = 'delete-btn';
     btn.onclick = () => {
-      summary.splice(i, 1);
+      // Remove all matching items
+      for (let j = 0; j < count; j++) {
+        const index = summary.indexOf(order);
+        if (index !== -1) summary.splice(index, 1);
+      }
       updateOrders();
     };
 
@@ -101,7 +112,15 @@ function updateOrders() {
 }
 
 function copySummary() {
-  const text = summary.map((item, i) => `${i + 1}. ${item}`).join('\n');
+  const countMap = {};
+  summary.forEach(order => {
+    countMap[order] = (countMap[order] || 0) + 1;
+  });
+
+  const text = Object.entries(countMap)
+    .map(([order, count], i) => `${i + 1}. ${order}${count > 1 ? ` x${count}` : ''}`)
+    .join('\n');
+
   navigator.clipboard.writeText(text);
   alert('Order copied to clipboard!');
 }
@@ -118,4 +137,3 @@ function showStep(stepId) {
   steps.forEach(s => s.classList.remove('active'));
   document.getElementById(stepId).classList.add('active');
 }
-
