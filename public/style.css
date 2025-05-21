@@ -245,7 +245,8 @@ a, a:visited, a:hover, a:active {
 }
 
 #helpBtn {
-  position: fixed;
+   animation: gentle-bounce 2.5s ease-in-out infinite;
+   position: fixed;
   top: 16px;
   right: 16px;
   background: none;
@@ -287,4 +288,13 @@ a, a:visited, a:hover, a:active {
   font-size: 1.4em;
   font-weight: bold;
   cursor: pointer;
+}
+
+@keyframes gentle-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
 }
