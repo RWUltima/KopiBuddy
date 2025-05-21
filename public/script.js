@@ -137,3 +137,8 @@ function showStep(stepId) {
   steps.forEach(s => s.classList.remove('active'));
   document.getElementById(stepId).classList.add('active');
 }
+
+function toggleHelp() {
+  const modal = document.getElementById('helpModal');
+  modal.style.display = (modal.style.display === 'block') ? 'none' : 'block';
+}
