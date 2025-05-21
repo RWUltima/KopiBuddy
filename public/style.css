@@ -1,7 +1,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(180deg, #ffffff 0%, #e7f7fc 35%, #eef1ff 100%);
+  background: #fffcf6;
   padding: 20px;
   text-align: center;
   color: #851212;
@@ -42,7 +42,7 @@ h2 {
   padding: 12px;
   border: none;
   border-radius: 20px;
-  background-color: #fcfaee;
+  background-color: #fbf6dd;
   font-size: 16px;
   font-weight: 600;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
@@ -67,7 +67,7 @@ h2 {
 #summary {
   margin-top: 40px;
   padding: 20px;
-  background: #fffef9;
+  background: #ffffff;
   border: 2px dashed #d4a373;
   border-radius: 12px;
   max-width: 600px;
@@ -104,7 +104,7 @@ h2 {
 #copyBtn {
   margin-top: 20px;
   padding: 12px 24px;
-  background: #c8fafc;
+  background: #eed6d3;
   border: none;
   border-radius: 12px;
   font-size: 16px;
@@ -114,7 +114,7 @@ h2 {
 }
 
 #copyBtn:hover {
-  background: #7ef3f7;
+  background: #e8b4b8;
 }
 
 @keyframes fadeIn {
