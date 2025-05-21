@@ -359,6 +359,7 @@ a, a:visited, a:hover, a:active {
   background-color: #c7d2fe;
 }
 
+/*styling for quick-add button*/
 .quick-add {
   margin-bottom: 10px;
   text-align: center;

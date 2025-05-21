@@ -78,12 +78,14 @@
 
 
     <div class="step" id="step2"><!--Step 2 starts here-->
-      <div class="quick-add">
+
+      <div class="quick-add"><!--Quick add button starts here-->
   <button class="back-btn" onclick="addToSummary()">
   Add your <strong><span id="quickDrinkName">kopi</span></strong> to order now
   <br><span class="subtext"><em>(I don't want to think too much!)</em></span>
 </button>
-</div>
+</div><!--Quick add button ends here-->
+
   <h2>Select Sugar Level</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setSugar('kosong')">
@@ -189,7 +191,7 @@
       <h2>Custom Note</h2>
       <input type="text" id="customNote" placeholder="e.g. extra ice" />
       <br/><br/>
-      <button class="option-btn" onclick="addToSummary()">Add to Order</button>
+      <button class="back-btn" onclick="addToSummary()">Add to Order</button>
       <br><button class="back-btn" onclick="backStep()">⬅ Back</button><!--Back button added here as next line-->
     </div><!--Step 6 ends here-->
 

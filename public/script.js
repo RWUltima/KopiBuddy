@@ -7,6 +7,7 @@ let drink = '',
 let currentStep = 1;
 const summary = [];
 
+//for quick-add function and to reflect the previous drink in the button text
 function buildOrderSinglish(drink, sugar, strength, milkType, temp) {
   let order = drink;
 
