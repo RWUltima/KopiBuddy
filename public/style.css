@@ -221,3 +221,15 @@ h2 {
     text-align: left;
   }
 }
+
+/* Remove Safari/Apple auto-link coloring */
+button, .option-btn span, .label, .emoji, .subtext, .order-item span {
+  color: #333 !important; /* or your pastel color of choice */
+  text-decoration: none !important;
+}
+
+/* Override blue links in case iOS wraps text in <a> internally */
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+}
