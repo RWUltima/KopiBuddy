@@ -3,8 +3,8 @@
   "short_name": "KopiBuddy",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fef6e4",
-  "theme_color": "#6a4c93",
+  "background_color": "##fffcf6",
+  "theme_color": "##fffcf6",
   "orientation": "portrait",
   "icons": [
     {
