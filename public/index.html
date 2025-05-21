@@ -81,7 +81,7 @@
 
       <div class="quick-add"><!--Quick add button starts here-->
   <button class="back-btn" onclick="addToSummary()">
-  Add your <strong><span id="quickDrinkName">kopi</span></strong> to order now
+  Add <strong><span id="quickDrinkName">kopi</span></strong> now!
   <br><span class="subtext"><em>(I don't want to think too much!)</em></span>
 </button>
 </div><!--Quick add button ends here-->
@@ -111,7 +111,7 @@
     <div class="step" id="step3"><!--Step 3 Starts here-->
       <div class="quick-add">
   <button class="back-btn" onclick="addToSummary()">
-  Add your <strong><span id="quickDrinkName">kopi</span></strong> to order now
+  Add <strong><span id="quickDrinkName">kopi</span></strong> now!
   <br><span class="subtext"><em>(I don't want to think too much!)</em></span>
 </button>
 </div>
@@ -140,7 +140,7 @@
     <div class="step" id="step4"><!--Step 4 starts here-->
       <div class="quick-add">
   <button class="back-btn" onclick="addToSummary()">
-  Add your <strong><span id="quickDrinkName">kopi</span></strong> to order now
+  Add <strong><span id="quickDrinkName">kopi</span></strong> now!
   <br><span class="subtext"><em>(I don't want to think too much!)</em></span>
 </button>
 </div>
@@ -165,7 +165,7 @@
     <div class="step" id="step5"><!--Step 5 starts here-->
       <div class="quick-add">
   <button class="back-btn" onclick="addToSummary()">
-  Add your <strong><span id="quickDrinkName">kopi</span></strong> to order now
+  Add <strong><span id="quickDrinkName">kopi</span></strong> now!
   <br><span class="subtext"><em>(I don't want to think too much!)</em></span>
 </button>
 </div>
@@ -199,7 +199,7 @@
       <h2>Enter Soft Drink Name</h2>
       <input type="text" id="softDrinkName" placeholder="e.g. Coke Zero" />
       <br/><br/>
-      <button class="option-btn" onclick="finalizeSoftDrinkManual()">Add to Order</button>
+      <button class="back-btn" onclick="finalizeSoftDrinkManual()">Add to Order</button>
       <br><button class="back-btn" onclick="showStep('step1')">⬅ Back</button><!--Added this back button. Because soft drink input isn’t part of the normal step flow (it jumps from Step 1 to a special step), currentStep may not track it properly. Using showStep('step1') directly ensures it reliably jumps back to the main drink selection page.-->
     </div>
   </div><!--Step 7 ends here-->
