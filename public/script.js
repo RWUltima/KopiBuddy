@@ -140,5 +140,6 @@ function showStep(stepId) {
 
 function toggleHelp() {
   const modal = document.getElementById('helpModal');
-  modal.style.display = (modal.style.display === 'block') ? 'none' : 'block';
+  const current = modal.style.display;
+  modal.style.display = (current === 'block') ? 'none' : 'block';
 }

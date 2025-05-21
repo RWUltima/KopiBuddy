@@ -255,7 +255,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .modal {
-  display: none;
+  display: none; /* Make sure this is set */
   position: fixed;
   z-index: 999;
   left: 0;
@@ -265,6 +265,7 @@ a, a:visited, a:hover, a:active {
   overflow: auto;
   background-color: rgba(0,0,0,0.4);
 }
+
 
 .modal-content {
   background-color: #fff9e6;
