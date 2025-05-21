@@ -156,13 +156,25 @@ h2 {
 }
 
 .option-btn .label {
-  color: #333; /* or any pastel tone you prefer */
+  color: #333; 
   text-decoration: none;
 }
 
 .option-btn:visited .label,
 .option-btn:active .label,
 .option-btn:hover .label {
+  color: #333;
+  text-decoration: none;
+}
+
+.copyBtn .label {
+  color: #333; 
+  text-decoration: none;
+}
+
+.copyBtn:visited .label,
+.copyBtn:active .label,
+.copyBtn:hover .label {
   color: #333;
   text-decoration: none;
 }
