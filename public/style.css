@@ -232,18 +232,18 @@ h2 {
 }
 }
 
-/* Remove Safari/Apple auto-link coloring */
+/* This is to remove Safari/Apple auto-link colouring */
 button, .option-btn span, .label, .emoji, .subtext, .order-item span {
   color: #333 !important; /* or your pastel color of choice */
   text-decoration: none !important;
 }
 
-/* Override blue links in case iOS wraps text in <a> internally */
+/* This is to override blue links in case iOS wraps text in <a> internally */
 a, a:visited, a:hover, a:active {
   color: inherit;
   text-decoration: none;
 }
-
+/* This is to style the modal popup of the mobile installation button on the top right*/
 #helpBtn {
   position: fixed;
   top: 16px;
@@ -289,7 +289,7 @@ a, a:visited, a:hover, a:active {
   font-weight: bold;
   cursor: pointer;
 }
-
+/* This is to animate the mobile phone icon on the top right*/
 @keyframes gentle-bounce {
   0%, 100% {
     transform: translateY(0);
@@ -297,4 +297,49 @@ a, a:visited, a:hover, a:active {
   50% {
     transform: translateY(-4px);
   }
+}
+/* This is the Style for the Easter egg button in top-left */
+#easterEggBtn {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999;
+  transition: opacity 0.2s;
+}
+#easterEggBtn:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fff9e6;
+  margin: 20% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.close-btn {
+  float: right;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
 }

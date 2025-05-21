@@ -137,9 +137,41 @@ function showStep(stepId) {
   steps.forEach(s => s.classList.remove('active'));
   document.getElementById(stepId).classList.add('active');
 }
-
+// this function is for the mobile phone installation part
 function toggleHelp() {
   const modal = document.getElementById('helpModal');
   const current = modal.style.display;
   modal.style.display = (current === 'block') ? 'none' : 'block';
+}
+
+//this function is for the easter egg
+let eggTapCount = 0;
+let eggTimer;
+
+function revealEasterEgg() {
+  const btn = document.getElementById('easterEggBtn');
+  const faces = ["🤔", "🧐", "😲"];
+
+  eggTapCount++;
+
+  clearTimeout(eggTimer);
+  eggTimer = setTimeout(() => {
+    eggTapCount = 0;
+    btn.textContent = faces[0]; // Reset face
+  }, 3000);
+
+  if (eggTapCount < 3) {
+    btn.textContent = faces[eggTapCount];
+  }
+
+  if (eggTapCount === 3) {
+    btn.textContent = faces[0];
+    eggTapCount = 0;
+    toggleEasterEgg(true);
+  }
+}
+
+function toggleEasterEgg(show) {
+  const modal = document.getElementById('easterEggModal');
+  modal.style.display = show ? 'block' : 'none';
 }
