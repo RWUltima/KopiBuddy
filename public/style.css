@@ -245,8 +245,7 @@ a, a:visited, a:hover, a:active {
 }
 
 #helpBtn {
-   animation: gentle-bounce 2.5s ease-in-out infinite;
-   position: fixed;
+  position: fixed;
   top: 16px;
   right: 16px;
   background: none;
@@ -257,6 +256,7 @@ a, a:visited, a:hover, a:active {
   cursor: pointer;
   z-index: 1000;
   padding: 0;
+  animation: gentle-bounce 2.5s ease-in-out 2;
 }
 
 .modal {
