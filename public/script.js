@@ -239,3 +239,4 @@ function toggleEasterEgg(show) {
   const modal = document.getElementById('easterEggModal');
   modal.style.display = show ? 'block' : 'none';
 }
+

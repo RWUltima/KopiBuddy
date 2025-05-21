@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +18,6 @@
 
 <!-- Canonical link -->
 <link rel="canonical" href="https://www.kopibuddy.com" />
-
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,10 +48,8 @@
 
 </head>
 
-
 <!-- Floating Help Button -->
 <button id="helpBtn" onclick="toggleHelp()">📲</button>
-
 
 <!-- Help Modal -->
 <div id="helpModal" class="modal">
@@ -66,10 +64,9 @@
 </div>
 
 
-
 <body>
   <h1 style="font-family: 'Quicksand', sans-serif; color: #6a4c93; font-size: 2.5rem;">☕ KopiBuddy</h1>
-<br>
+
   <div id="wizard">
     <!--Step 1 starts here-->
     <div class="step active" id="step1">
@@ -94,16 +91,16 @@
   </div>
 </div><!--Step 1 Ends here-->
 
-
     <div class="step" id="step2"><!--Step 2 starts here-->
+
       <div class="quick-add"><!--Quick add button starts here-->
   <button class="back-btn" onclick="addToSummary()">
- <font size="4"> "I want to order just <strong><span id="quickDrinkName">kopi</span></strong>"</font>
- <br><span class="subtext"><em>(select to add to order summary)</em></span>
+  "I'll have just a <strong><span id="quickDrinkName">kopi</span></strong> pls!"
+  <br><span class="subtext"><em>(Adds this to Order Summary)</em></span>
 </button>
 </div><!--Quick add button ends here-->
 
-  <h2>or customise Sugar Level</h2>
+  <h2>or customise Sugar Level?</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setSugar('kosong')">
       <span class="emoji">❌</span>
@@ -128,11 +125,11 @@
     <div class="step" id="step3"><!--Step 3 Starts here-->
       <div class="quick-add">
   <button class="back-btn" onclick="addToSummary()">
-  <font size="4"> "I want to order <strong><span id="quickDrinkName">kopi</span></strong>"</font>
-  <br><span class="subtext"><em>(select to add to order summary)</em></span>
+  Add <strong><span id="quickDrinkName">kopi</span></strong> now!
+  <br><span class="subtext"><em>(I don't want to think too much!)</em></span>
 </button>
 </div>
-  <h2>or customise Strength</h2>
+  <h2>Select Strength</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setStrength('po')">
       <span class="emoji">💪</span>
@@ -157,11 +154,11 @@
     <div class="step" id="step4"><!--Step 4 starts here-->
       <div class="quick-add">
   <button class="back-btn" onclick="addToSummary()">
-   <font size="4"> "I want to order <strong><span id="quickDrinkName">kopi</span></strong>"</font>
-  <br><span class="subtext"><em>(select to add to order summary)</em></span>
+  Add <strong><span id="quickDrinkName">kopi</span></strong> now!
+  <br><span class="subtext"><em>(I don't want to think too much!)</em></span>
 </button>
 </div>
-  <h2>or customise Milkyness</h2>
+  <h2>Select Milkyness</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setMilkType('o')">
       <span class="emoji">❌</span>
@@ -182,19 +179,19 @@
     <div class="step" id="step5"><!--Step 5 starts here-->
       <div class="quick-add">
   <button class="back-btn" onclick="addToSummary()">
-  <font size="4"> "I want <strong><span id="quickDrinkName">kopi</span></strong>"</font>
-  <br><span class="subtext"><em>(select to add to order summary)</em></span>
+  Add <strong><span id="quickDrinkName">kopi</span></strong> now!
+  <br><span class="subtext"><em>(I don't want to think too much!)</em></span>
 </button>
 </div>
-  <h2>or customise Temperature </h2>
+  <h2>Select Temperature</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setTemp('hot')">
       <span class="emoji">🔥</span>
-      <span>Hot</span>
+      <span>Warm</span>
     </button>
     <button class="option-btn" onclick="setTemp('pua sio')">
       <span class="emoji">🌞</span>
-      <span>Warm<br><span class="subtext">(Pua Sio)</span></span>
+      <span>Lukewarm<br><span class="subtext">(Pua Sio)</span></span>
     </button>
     <button class="option-btn" onclick="setTemp('peng')">
       <span class="emoji">🧊</span>
@@ -205,13 +202,10 @@
 </div><!--Step 5 ends here-->
 
     <div class="step" id="step6"><!--Step 6 Starts here-->
-      <h2>Final customisation?</h2>
+      <h2>Custom Note</h2>
       <input type="text" id="customNote" placeholder="e.g. extra ice" />
       <br/><br/>
-      <div class="quick-add">
-  <button class="back-btn" onclick="addToSummary()">
-  <font size="4"> "I want <strong><span id="quickDrinkName">kopi</span></strong>"</font>
-  <br><span class="subtext"><em>(with above customisation)</em></span>
+      <button class="back-btn" onclick="addToSummary()">Add to Order</button>
       <br><button class="back-btn" onclick="backStep()">⬅ Back</button><!--Back button added here as next line-->
     </div><!--Step 6 ends here-->
 
@@ -242,7 +236,7 @@
     <h3>🥚 You found the Easter Egg!</h3>
     <p>KopiBuddy was built to simplify chaotic kopi orders during lunch, and perhaps make it a little more fun!</p>
     <p>Hope this little tool makes your day easier — and your kopi more shiok ☕</p>
-    <p><strong>👨‍💻 Made by Reuben Wong as part of a mini project. May your kopi sessions with your friends/colleagues bring you joy!</strong></p>
+    <p><strong>👨💻 Made by Reuben Wong as part of a mini project. May your kopi sessions with your friends/colleagues bring you joy!</strong></p>
   </div>
 </div>
 
