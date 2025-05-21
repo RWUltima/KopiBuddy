@@ -98,11 +98,12 @@
     <div class="step" id="step2"><!--Step 2 starts here-->
       <div class="quick-add"><!--Quick add button starts here-->
   <button class="back-btn" onclick="addToSummary()">
-  Quickly Add my <strong><span id="quickDrinkName">kopi</span></strong> Now!
+ <font size="5"> "I want to order just <strong><span id="quickDrinkName">kopi</span></strong>"</font>
+ <br><span class="subtext"><em>(select to add to order summary)</em></span>
 </button>
 </div><!--Quick add button ends here-->
 
-  <h2>Or select Sugar Level</h2>
+  <h2>or customise Sugar Level</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setSugar('kosong')">
       <span class="emoji">❌</span>
@@ -127,11 +128,11 @@
     <div class="step" id="step3"><!--Step 3 Starts here-->
       <div class="quick-add">
   <button class="back-btn" onclick="addToSummary()">
-  Add <strong><span id="quickDrinkName">kopi</span></strong> now!
-  <br><span class="subtext"><em>(I don't want to think too much!)</em></span>
+  <font size="5"> "I want to order <strong><span id="quickDrinkName">kopi</span></strong>"</font>
+  <br><span class="subtext"><em>(select to add to order summary)</em></span>
 </button>
 </div>
-  <h2>Select Strength</h2>
+  <h2>or customise Strength</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setStrength('po')">
       <span class="emoji">💪</span>
@@ -156,11 +157,11 @@
     <div class="step" id="step4"><!--Step 4 starts here-->
       <div class="quick-add">
   <button class="back-btn" onclick="addToSummary()">
-  Add <strong><span id="quickDrinkName">kopi</span></strong> now!
-  <br><span class="subtext"><em>(I don't want to think too much!)</em></span>
+   <font size="5"> "I want to order <strong><span id="quickDrinkName">kopi</span></strong>"</font>
+  <br><span class="subtext"><em>(select to add to order summary)</em></span>
 </button>
 </div>
-  <h2>Select Milkyness</h2>
+  <h2>or customise Milkyness</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setMilkType('o')">
       <span class="emoji">❌</span>
@@ -181,19 +182,19 @@
     <div class="step" id="step5"><!--Step 5 starts here-->
       <div class="quick-add">
   <button class="back-btn" onclick="addToSummary()">
-  Add <strong><span id="quickDrinkName">kopi</span></strong> now!
-  <br><span class="subtext"><em>(I don't want to think too much!)</em></span>
+  <font size="5"> "I want <strong><span id="quickDrinkName">kopi</span></strong>"</font>
+  <br><span class="subtext"><em>(select to add to order summary)</em></span>
 </button>
 </div>
-  <h2>Select Temperature</h2>
+  <h2>or customise Temperature </h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setTemp('hot')">
       <span class="emoji">🔥</span>
-      <span>Warm</span>
+      <span>Hot</span>
     </button>
     <button class="option-btn" onclick="setTemp('pua sio')">
       <span class="emoji">🌞</span>
-      <span>Lukewarm<br><span class="subtext">(Pua Sio)</span></span>
+      <span>Warm<br><span class="subtext">(Pua Sio)</span></span>
     </button>
     <button class="option-btn" onclick="setTemp('peng')">
       <span class="emoji">🧊</span>
@@ -204,10 +205,13 @@
 </div><!--Step 5 ends here-->
 
     <div class="step" id="step6"><!--Step 6 Starts here-->
-      <h2>Custom Note</h2>
+      <h2>Final customisation?</h2>
       <input type="text" id="customNote" placeholder="e.g. extra ice" />
       <br/><br/>
-      <button class="back-btn" onclick="addToSummary()">Add to Order</button>
+      <div class="quick-add">
+  <button class="back-btn" onclick="addToSummary()">
+  <font size="5"> "I want <strong><span id="quickDrinkName">kopi</span></strong>"</font>
+  <br><span class="subtext"><em>(with above customisation)</em></span>
       <br><button class="back-btn" onclick="backStep()">⬅ Back</button><!--Back button added here as next line-->
     </div><!--Step 6 ends here-->
 
