@@ -1,7 +1,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #fefae0;
+  background: linear-gradient(180deg, #ffffff 0%, #e7f7fc 35%, #eef1ff 100%);
   padding: 20px;
   text-align: center;
   color: #851212;
@@ -14,7 +14,7 @@ h1 {
 }
 
 h2 {
-  color: #606c38;
+  color: #6c3e38;
 }
 
 .step {
@@ -42,7 +42,7 @@ h2 {
   padding: 12px;
   border: none;
   border-radius: 20px;
-  background-color: #faedcd;
+  background-color: #fcfaee;
   font-size: 16px;
   font-weight: 600;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
@@ -52,7 +52,7 @@ h2 {
 
 .option-btn:hover {
   transform: scale(1.05);
-  background-color: #d4a373;
+  background-color: #ffd898;
   color: #fff;
 }
 
@@ -67,7 +67,7 @@ h2 {
 #summary {
   margin-top: 40px;
   padding: 20px;
-  background: #fefae0;
+  background: #fffef9;
   border: 2px dashed #d4a373;
   border-radius: 12px;
   max-width: 600px;
@@ -104,7 +104,7 @@ h2 {
 #copyBtn {
   margin-top: 20px;
   padding: 12px 24px;
-  background: #a3cfbb;
+  background: #c8fafc;
   border: none;
   border-radius: 12px;
   font-size: 16px;
@@ -114,7 +114,7 @@ h2 {
 }
 
 #copyBtn:hover {
-  background: #76c893;
+  background: #7ef3f7;
 }
 
 @keyframes fadeIn {
@@ -153,6 +153,18 @@ h2 {
   .subtext {
     font-size: 0.8em;
   }
+}
+
+.option-btn .label {
+  color: #333; /* or any pastel tone you prefer */
+  text-decoration: none;
+}
+
+.option-btn:visited .label,
+.option-btn:active .label,
+.option-btn:hover .label {
+  color: #333;
+  text-decoration: none;
 }
 
 @media (max-width: 480px) {
