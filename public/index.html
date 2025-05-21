@@ -174,6 +174,7 @@
       <input type="text" id="softDrinkName" placeholder="e.g. Coke Zero" />
       <br/><br/>
       <button class="option-btn" onclick="finalizeSoftDrinkManual()">Add to Order</button>
+      <br><button class="back-btn" onclick="showStep('step1')">⬅ Back</button><!--Added this back button. Because soft drink input isn’t part of the normal step flow (it jumps from Step 1 to a special step), currentStep may not track it properly. Using showStep('step1') directly ensures it reliably jumps back to the main drink selection page.-->
     </div>
   </div><!--Step 7 ends here-->
 
