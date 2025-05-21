@@ -53,6 +53,7 @@
   <h1 style="font-family: 'Quicksand', sans-serif; color: #6a4c93; font-size: 2.5rem;">☕ KopiBuddy</h1>
 
   <div id="wizard">
+    <!--Step 1 starts here-->
     <div class="step active" id="step1">
   <h2>Select Drink</h2>
   <div class="button-grid">
@@ -73,8 +74,10 @@
       <span class="label">Soft Drink</span>
     </button>
   </div>
-</div>
-    <div class="step" id="step2">
+</div><!--Step 1 Ends here-->
+
+
+    <div class="step" id="step2"><!--Step 2 starts here-->
   <h2>Select Sugar Level</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setSugar('kosong')">
@@ -94,8 +97,10 @@
       <span>More Sugar<br><span class="subtext">(Ga Dai)</span></span>
     </button>
   </div>
-</div>
-    <div class="step" id="step3">
+  <button class="back-btn" onclick="backStep()">⬅ Back</button>
+</div><!--Step 2 Ends here-->
+
+    <div class="step" id="step3"><!--Step 3 Starts here-->
   <h2>Select Strength</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setStrength('po')">
@@ -115,8 +120,10 @@
       <span>Stronger<br><span class="subtext">(Di Lo)</span></span>
     </button>
   </div>
-</div>
-    <div class="step" id="step4">
+  <button class="back-btn" onclick="backStep()">⬅ Back</button>
+</div><!--Step 3 ends here-->
+
+    <div class="step" id="step4"><!--Step 4 starts here-->
   <h2>Select Milkyness</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setMilkType('o')">
@@ -132,8 +139,10 @@
       <span>Evaporated Milk<br><span class="subtext">(C)</span></span>
     </button>
   </div>
-</div>
-    <div class="step" id="step5">
+  <button class="back-btn" onclick="backStep()">⬅ Back</button>
+</div><!--Step 4 ends here-->
+
+    <div class="step" id="step5"><!--Step 5 starts here-->
   <h2>Select Temperature</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setTemp('hot')">
@@ -149,20 +158,24 @@
       <span>Iced<br><span class="subtext">(Peng)</span></span>
     </button>
   </div>
-</div>
-    <div class="step" id="step6">
+  <button class="back-btn" onclick="backStep()">⬅ Back</button>
+</div><!--Step 5 ends here-->
+
+    <div class="step" id="step6"><!--Step 6 Starts here-->
       <h2>Custom Note</h2>
       <input type="text" id="customNote" placeholder="e.g. extra ice" />
       <br/><br/>
       <button class="option-btn" onclick="addToSummary()">Add to Order</button>
-    </div>
-    <div class="step" id="softDrinkInputStep">
+      <br><button class="back-btn" onclick="backStep()">⬅ Back</button><!--Back button added here as next line-->
+    </div><!--Step 6 ends here-->
+
+    <div class="step" id="softDrinkInputStep"><!--Step 7 or Soft Drink option starts here-->
       <h2>Enter Soft Drink Name</h2>
       <input type="text" id="softDrinkName" placeholder="e.g. Coke Zero" />
       <br/><br/>
       <button class="option-btn" onclick="finalizeSoftDrinkManual()">Add to Order</button>
     </div>
-  </div>
+  </div><!--Step 7 ends here-->
 
   <div id="summary">
     <h2>Order Summary</h2>

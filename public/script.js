@@ -1,4 +1,5 @@
 let drink = '', sugar = '', strength = '', milkType = '', temp = '', note = '';
+let currentStep = 1; // to enable back step
 const summary = [];
 
 function nextStep(selectedDrink) {
@@ -132,11 +133,25 @@ function resetWizard() {
   showStep('step1');
 }
 
-function showStep(stepId) {
+function showStep(stepId) {//updated to accommodate for backstep function
   const steps = document.querySelectorAll('.step');
   steps.forEach(s => s.classList.remove('active'));
-  document.getElementById(stepId).classList.add('active');
+
+  const stepElement = document.getElementById(stepId);
+  stepElement.classList.add('active');
+
+  const stepNumber = parseInt(stepId.replace('step', ''));
+  if (!isNaN(stepNumber)) {
+    currentStep = stepNumber;
+  }
 }
+
+function backStep() {//adds the function for backstep
+  if (currentStep > 1) {
+    showStep(`step${currentStep - 1}`);
+  }
+}
+
 // this function is for the mobile phone installation part
 function toggleHelp() {
   const modal = document.getElementById('helpModal');

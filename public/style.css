@@ -343,3 +343,18 @@ a, a:visited, a:hover, a:active {
   font-weight: bold;
   cursor: pointer;
 }
+
+/*This is for the back button*/
+.step button.back-btn {
+  margin-top: 16px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  background-color: #e0e7ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.step button.back-btn:hover {
+  background-color: #c7d2fe;
+}
