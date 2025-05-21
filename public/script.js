@@ -1,35 +1,75 @@
-let drink = '', sugar = '', strength = '', milkType = '', temp = '', note = '';
-let currentStep = 1; // to enable back step
+let drink = '',
+    sugar = 'normal',
+    strength = 'normal',
+    milkType = 'condensed',
+    temp = 'hot',
+    note = '';
+let currentStep = 1;
 const summary = [];
+
+function buildOrderSinglish(drink, sugar, strength, milkType, temp) {
+  let order = drink;
+
+  if (milkType === 'o') {
+    order += ' o';
+  } else if (milkType === 'c') {
+    order += ' c';
+  }
+
+  if (strength === 'po') order += ' po';
+  else if (strength === 'gau') order += ' gau';
+  else if (strength === 'di lo') order += ' di lo';
+
+  if (sugar === 'kosong') order += ' kosong';
+  else if (sugar === 'siu dai') order += ' siu dai';
+  else if (sugar === 'ga dai') order += ' ga dai';
+
+  if (temp === 'pua sio') order += ' pua sio';
+  else if (temp === 'peng') order += ' peng';
+
+  return order.trim();
+}
 
 function nextStep(selectedDrink) {
   drink = selectedDrink.toLowerCase();
 
-   if (['kopi', 'teh', 'milo'].includes(drink)) {
-    showStep('step2'); // start custom flow
+  // Only update quick labels if drink is valid
+  if (['kopi', 'teh', 'milo'].includes(drink)) {
+    // Set default values in case user adds to order immediately
+    sugar = 'normal';
+    strength = 'normal';
+    milkType = 'condensed';
+    temp = 'hot';
+
+    updateQuickAddLabels(); // safe to call now
+    showStep('step2'); // move to sugar selection
   } else {
-    alert(`${selectedDrink} flow is not implemented yet. Only Kopi and Teh are supported for now.`);
+    alert(`${selectedDrink} flow is not implemented yet. Only Kopi, Teh, and Milo are supported for now.`);
     resetWizard(); 
   }
 }
 
-function setSugar(val) {
-  sugar = val;
+function setSugar(level) {
+  sugar = level;
+  updateQuickAddLabels();
   showStep('step3');
 }
 
-function setStrength(val) {
-  strength = val;
+function setStrength(level) {
+  strength = level;
+  updateQuickAddLabels();
   showStep('step4');
 }
 
-function setMilkType(val) {
-  milkType = val;
+function setMilkType(type) {
+  milkType = type;
+  updateQuickAddLabels();
   showStep('step5');
 }
 
-function setTemp(val) {
-  temp = val;
+function setTemp(tempLevel) {
+  temp = tempLevel;
+  updateQuickAddLabels();
   showStep('step6');
 }
 
@@ -144,6 +184,14 @@ function showStep(stepId) {//updated to accommodate for backstep function
   if (!isNaN(stepNumber)) {
     currentStep = stepNumber;
   }
+}
+
+function updateQuickAddLabels() {
+  const quickSpans = document.querySelectorAll('#quickDrinkName');
+  const orderText = buildOrderSinglish(drink, sugar, strength, milkType, temp);
+  quickSpans.forEach(span => {
+    span.textContent = orderText;
+  });
 }
 
 function backStep() {//adds the function for backstep
