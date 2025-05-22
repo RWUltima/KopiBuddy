@@ -220,7 +220,7 @@
   <h2>anything else?</h2>
   <input type="text" id="customNote" placeholder="e.g. extra ice" />
   <br/><br/>
-  <button class="back-btn" onclick="addToSummary()">Add to Order</button>
+  <button class="final-add-btn" onclick="addToSummary()">Add to Order Summary</button>
    <br><button class="back-btn" onclick="backStep()">⬅ Back</button><!--Back button added here as next line-->
 </div><!--Step 6 ends here-->
 
@@ -228,7 +228,7 @@
       <h2>Enter Soft Drink Name</h2>
       <input type="text" id="softDrinkName" placeholder="e.g. Coke Zero" />
       <br/><br/>
-      <button class="back-btn" onclick="finalizeSoftDrinkManual()">Add to Order</button>
+      <button class="final-add-btn" onclick="finalizeSoftDrinkManual()">Add to Order</button>
       <br><button class="back-btn" onclick="showStep('step1')">⬅ Back</button><!--Added this back button. Because soft drink input isn’t part of the normal step flow (it jumps from Step 1 to a special step), currentStep may not track it properly. Using showStep('step1') directly ensures it reliably jumps back to the main drink selection page.-->
     </div>
   </div><!--Step 7 ends here-->

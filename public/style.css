@@ -14,6 +14,7 @@ h1 {
 }
 
 h2 {
+  font-size: smaller
   color: #6c3e38;
 }
 
@@ -449,3 +450,28 @@ a, a:visited, a:hover, a:active {
   50% { box-shadow: 0 0 12px #a8df8e; }
 }
 
+.final-add-btn {
+  background-color: #6fe3a3;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  width: 45%;
+  font-size: 1rem;
+  box-shadow: 0 0 0 rgba(111, 227, 163, 0.5);
+  animation: glowPulse 2s ease-in-out infinite;
+  transition: transform 0.2s ease-in-out;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.final-add-btn:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 600px) {
+  .final-add-btn {
+    width: 90%;
+  }
+}
