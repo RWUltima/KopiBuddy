@@ -86,7 +86,14 @@ h2 {
   align-items: center;
 }
 
-.delete-btn {
+.order-btn-group {
+  display: flex;
+  gap: 6px;
+  margin-left: 10px;
+}
+
+
+.delete-btn {/*for delete button*/
   background: #feb9b9;
   border: none;
   border-radius: 12px;
@@ -97,9 +104,26 @@ h2 {
   transition: background 0.3s;
 }
 
-.delete-btn:hover {
+.delete-btn:hover {/*for delete button*/
   background: #e03131;
 }
+
+.duplicate-btn {/*for duplicate button*/
+  background: #d1f7c4;
+  border: none;
+  border-radius: 12px;
+  color: #000;
+  font-size: 14px;
+  padding: 4px 10px;
+  margin-left: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.duplicate-btn:hover {/*for duplicate button*/
+  background: #a7e99c;
+}
+
 
 #copyBtn {
   margin-top: 20px;

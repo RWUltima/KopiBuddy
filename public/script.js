@@ -118,40 +118,58 @@ function addToSummary() {
   resetWizard();
 }
 
+//Start of Order Summary Part 
 function updateOrders() {
   const container = document.getElementById('orders');
   container.innerHTML = '';
 
-  // Group identical orders and count
-  const countMap = {};
-  summary.forEach(order => {
-    countMap[order] = (countMap[order] || 0) + 1;
-  });
+  const seen = new Set();
+  let displayIndex = 1;
 
-  Object.entries(countMap).forEach(([order, count], i) => {
+  summary.forEach((order) => {
+    if (seen.has(order)) return;
+    seen.add(order);
+
+    const count = summary.filter(item => item === order).length;
+
     const div = document.createElement('div');
     div.className = 'order-item';
 
     const text = document.createElement('span');
-    text.textContent = `${i + 1}. ${order}${count > 1 ? ` x${count}` : ''}`;
+    text.textContent = `${displayIndex++}. ${order}${count > 1 ? ` x${count}` : ''}`;
 
-    const btn = document.createElement('button');
-    btn.textContent = '❌';
-    btn.className = 'delete-btn';
-    btn.onclick = () => {
-      // Remove all matching items
-      for (let j = 0; j < count; j++) {
-        const index = summary.indexOf(order);
-        if (index !== -1) summary.splice(index, 1);
-      }
+    const buttonGroup = document.createElement('span');
+    buttonGroup.className = 'order-btn-group';
+
+    const addBtn = document.createElement('button');
+    addBtn.textContent = '➕';
+    addBtn.className = 'duplicate-btn';
+    addBtn.onclick = () => {
+      summary.push(order);
       updateOrders();
     };
 
+    const delBtn = document.createElement('button');
+    delBtn.textContent = '❌';
+    delBtn.className = 'delete-btn';
+    delBtn.onclick = () => {
+      const index = summary.indexOf(order);
+      if (index !== -1) {
+        summary.splice(index, 1);
+        updateOrders();
+      }
+    };
+
+    buttonGroup.appendChild(addBtn);
+    buttonGroup.appendChild(delBtn);
+
     div.appendChild(text);
-    div.appendChild(btn);
+    div.appendChild(buttonGroup);
     container.appendChild(div);
   });
 }
+
+//End of Order Summary function
 
 function copySummary() {
   const countMap = {};
@@ -197,7 +215,7 @@ function updateQuickAddLabels() {
 
 function backStep() {
   if (currentStep > 1) {
-    currentStep--; console.log(currentStep)
+    currentStep--; 
   
     // Reset drink properties based on what step we're going back to
     switch (currentStep) {
