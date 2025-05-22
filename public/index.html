@@ -94,11 +94,11 @@
 <div class="step" id="step2">
   <div class="quick-add">
     <button class="back-btn" onclick="addToSummary()">
-      "I'll have just a <strong><span id="quickDrinkName">kopi</span></strong> pls!"
-      <br><span class="subtext"><em>(Adds this to Order Summary)</em></span>
+      "Add <strong><span id="quickDrinkName">kopi</span></strong> Now!"
+      <br><span class="subtext"><em>(Quick Add)</em></span>
     </button>
   </div>
-  <h2>or customise Sugar Level?</h2>
+  <h2>or tweak sweetness?</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setSugar('kosong')">
       <span class="emoji">❌</span>
@@ -126,10 +126,10 @@
   <div class="quick-add">
     <button class="back-btn" onclick="addToSummary()">
       Add <strong><span id="quickDrinkName">kopi</span></strong> now!
-      <br><span class="subtext"><em>(I don't want to think too much!)</em></span>
+      <br><span class="subtext"><em>(Quick Add)</em></span>
     </button>
   </div>
-  <h2>Select Milk Type</h2>
+  <h2>or select Milk Type?</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setMilkType('o')">
       <span class="emoji">❌</span>
@@ -153,10 +153,10 @@
   <div class="quick-add">
     <button class="back-btn" onclick="addToSummary()">
       Add <strong><span id="quickDrinkName">kopi</span></strong> now!
-      <br><span class="subtext"><em>(I don't want to think too much!)</em></span>
+      <br><span class="subtext"><em>(IQuick Add)</em></span>
     </button>
   </div>
-  <h2>Select Temperature</h2>
+  <h2>what about Temperature?</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setTemp('peng')">
       <span class="emoji">🧊</span>
@@ -180,10 +180,10 @@
   <div class="quick-add">
     <button class="back-btn" onclick="addToSummary()">
       Add <strong><span id="quickDrinkName">kopi</span></strong> now!
-      <br><span class="subtext"><em>(I don't want to think too much!)</em></span>
+      <br><span class="subtext"><em>(Quick Add)</em></span>
     </button>
   </div>
-  <h2>Select Strength</h2>
+  <h2>or select Strength?</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setStrength('po')">
       <span class="emoji">💪</span>
@@ -208,7 +208,13 @@
 
 <!--Step 6 Starts here-->
 <div class="step" id="step6">
-  <h2>Custom Note</h2>
+    <div class="quick-add">
+    <button class="back-btn" onclick="addToSummary()">
+      Add <strong><span id="quickDrinkName">kopi</span></strong> now!
+      <br><span class="subtext"><em>(Quick Add)</em></span>
+    </button>
+  </div>
+  <h2>anything else?</h2>
   <input type="text" id="customNote" placeholder="e.g. extra ice" />
   <br/><br/>
   <button class="back-btn" onclick="addToSummary()">Add to Order</button>
