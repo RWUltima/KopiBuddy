@@ -31,21 +31,6 @@ function buildOrderSinglish(drink, sugar, strength, milkType, temp) {
   return order.trim();
 }
 
-function selectBaseDrink(selectedDrink) {
-  drink = selectedDrink.toLowerCase();
-  sugar = 'normal';
-  strength = 'normal';
-  milkType = 'condensed';
-  temp = 'hot';
-  note = '';
-
-  document.getElementById('quickDrinkName').textContent = drink;
-  document.getElementById('customDrinkLabel').textContent = drink;
-
-  showStep('quickAddStep');
-}
-
-
 function nextStep(selectedDrink) {
   drink = selectedDrink.toLowerCase();
 

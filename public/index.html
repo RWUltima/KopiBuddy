@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,20 +67,19 @@
   <h1 style="font-family: 'Quicksand', sans-serif; color: #6a4c93; font-size: 2.5rem;">☕ KopiBuddy</h1>
 
   <div id="wizard">
-
-<!-- Step 1: Drink Selection -->
-<div class="step active" id="step1">
+    <!--Step 1 starts here-->
+    <div class="step active" id="step1">
   <h2>Select Drink</h2>
   <div class="button-grid">
-    <button class="option-btn" onclick="selectBaseDrink('kopi')">
+    <button class="option-btn" onclick="nextStep('Kopi')">
       <span class="emoji left">☕</span>
       <span class="label">Kopi</span>
     </button>
-    <button class="option-btn" onclick="selectBaseDrink('teh')">
+    <button class="option-btn" onclick="nextStep('Teh')">
       <span class="emoji left">🍵</span>
       <span class="label">Teh</span>
     </button>
-    <button class="option-btn" onclick="selectBaseDrink('milo')">
+    <button class="option-btn" onclick="nextStep('Milo')">
       <span class="emoji left">🧃</span>
       <span class="label">Milo</span>
     </button>
@@ -90,30 +88,9 @@
       <span class="label">Soft Drink</span>
     </button>
   </div>
-</div><!--Step 1 ends here-->
+</div><!--Step 1 Ends here-->
 
-<!-- Step 1.5: Quick Add Step -->
-<div class="step" id="quickAddStep">
-  <h2>Your Drink: <span id="quickDrinkName">kopi</span></h2>
-
-  <p style="text-align: center; font-size: 0.95rem; color: #444;">
-    Choose how you'd like to proceed
-  </p>
-
-  <div class="button-stack">
-    <button class="quick-add-btn" onclick="addToSummary(this)">
-      ✅ Add your <strong><span id="quickDrinkName">kopi</span></strong> to order now
-    </button>
-    <button class="customize-round-btn" onclick="showStep('step2')">
-      🔧 Tweak your <span id="customDrinkLabel">kopi</span>
-    </button>
-  </div>
-
-  <button class="back-btn" onclick="showStep('step1')">⬅ Back</button>
-</div><!--End of Step 1.5: Quick add step-->
-
-
-<div class="step" id="step2"><!--Step 2 starts here-->
+    <div class="step" id="step2"><!--Step 2 starts here-->
 
       <div class="quick-add"><!--Quick add button starts here-->
   <button class="back-btn" onclick="addToSummary()">
@@ -271,4 +248,3 @@
 
 </body>
 </html>
-

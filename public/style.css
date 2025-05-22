@@ -1,5 +1,4 @@
 
-
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #fffcf6;
@@ -393,96 +392,5 @@ a, a:visited, a:hover, a:active {
   margin: 0 auto;
   line-height: 1.4;
 }
-/*for quick add button*/
-.quick-add-btn {
-  background-color: #d2f5d1;
-  color: #1e4620;
-  font-weight: bold;
-  font-size: 1.1rem;
-  padding: 16px 24px;
-  border-radius: 12px;
-  margin-bottom: 10px;
-  width: 100%;
-  max-width: 400px;
-  animation: pulseGreen 1.8s infinite ease-in-out;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
 
-.quick-add-btn:hover {
-  background-color: #b5ebb4;
-  transform: scale(1.02);
-}
 
-.customize-btn {
-  background: none;
-  border: none;
-  font-size: 1rem;
-  color: #444;
-  text-decoration: underline;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-@keyframes pulseGreen {
-  0% { box-shadow: 0 0 0 0 rgba(110, 231, 183, 0.6); }
-  70% { box-shadow: 0 0 0 10px rgba(110, 231, 183, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(110, 231, 183, 0); }
-}
-
-/*Add Mobile-Optimised Styling*/
-.button-stack {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-.quick-add-btn {
-  background-color: #d2f5d1;
-  color: #1e4620;
-  font-weight: bold;
-  font-size: 1.1rem;
-  padding: 16px 20px;
-  border-radius: 14px;
-  width: 90%;
-  max-width: 400px;
-  animation: pulseGreen 1.8s infinite ease-in-out;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.quick-add-btn:hover {
-  background-color: #b5ebb4;
-  transform: scale(1.03);
-}
-
-.customize-round-btn {
-  background-color: #f5f5f5;
-  color: #333;
-  font-weight: 500;
-  font-size: 1rem;
-  padding: 12px 18px;
-  border-radius: 14px;
-  border: 1px solid #ccc;
-  width: 80%;
-  max-width: 360px;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
-}
-
-.customize-round-btn:hover {
-  background-color: #e0e0e0;
-  transform: scale(1.02);
-}
-
-@media (max-width: 600px) {
-  .quick-add-btn,
-  .customize-round-btn {
-    font-size: 1rem;
-    width: 100%;
-  }
-}
