@@ -53,26 +53,26 @@ function nextStep(selectedDrink) {
 function setSugar(level) {
   sugar = level;
   updateQuickAddLabels();
-  showStep('step3');
-}
-
-function setStrength(level) {
-  strength = level;
-  updateQuickAddLabels();
-  showStep('step4');
+  showStep('step3'); // clicks to show milk type
 }
 
 function setMilkType(type) {
   milkType = type;
   updateQuickAddLabels();
-  showStep('step5');
+  showStep('step4'); // clicks to shows Temp
 }
 
 function setTemp(tempLevel) {
   temp = tempLevel;
   updateQuickAddLabels();
-  showStep('step6');
+  showStep('step5'); // clicks to show Strength
 }
+function setStrength(level) {
+  strength = level;
+  updateQuickAddLabels();
+  showStep('step6'); // clicks to final step: Additional Notes
+}
+
 
 function askSoftDrink() {
   showStep('softDrinkInputStep');
