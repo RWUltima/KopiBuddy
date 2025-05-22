@@ -195,9 +195,37 @@ function updateQuickAddLabels() {
   });
 }
 
-function backStep() {//adds the function for backstep
+function backStep() {
   if (currentStep > 1) {
-    showStep(`step${currentStep - 1}`);
+    currentStep--; console.log(currentStep)
+  
+    // Reset drink properties based on what step we're going back to
+    switch (currentStep) {
+      case 2:
+        sugar = 'normal';
+        strength = 'normal';
+        milkType = 'condensed';
+        temp = 'hot';
+        break;
+      case 3://selected sugar
+        strength = 'normal';
+        milkType = 'condensed';
+        temp = 'hot';
+        break;
+      case 4:
+        temp = 'hot';
+        strength = 'normal';
+        break;
+      case 5:
+        strength = 'normal';
+        break;
+      case 6:
+        note = '';
+        break;
+    }
+
+    updateQuickAddLabels();
+    showStep(`step${currentStep}`);
   }
 }
 
