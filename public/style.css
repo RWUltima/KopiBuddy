@@ -7,6 +7,19 @@ body {
   color: #851212;
 }
 
+button,
+input,
+select,
+textarea,
+label,
+.option-btn span,
+.label,
+.quick-add,
+.subtext,
+.order-item span {
+  font-family: 'Quicksand', sans-serif !important;
+}
+
 
 h1 {
   font-size: 2em;
