@@ -90,36 +90,39 @@
   </div>
 </div><!--Step 1 Ends here-->
 
-<!--Step 2 starts here-->
+<!-- Step 2 starts here -->
 <div class="step" id="step2">
   <div class="quick-add">
-    <button class="back-btn" onclick="addToSummary()">
-      "Add <strong><span id="quickDrinkName">kopi</span></strong> Now!"
-      <br><span class="subtext"><em>(Quick Add)</em></span>
+    <button class="quick-btn" onclick="addToSummary()">
+      Add <strong><span id="quickDrinkName">kopi</span></strong> Now
+      <br><span class="subtext"><em>(adds to Order Summary)</em></span>
     </button>
   </div>
-  <h2>or tweak sweetness?</h2>
-  <div class="button-grid">
-    <button class="option-btn" onclick="setSugar('kosong')">
-      <span class="emoji">❌</span>
-      <span>No Sugar<br><span class="subtext">(Kosong)</span></span>
-    </button>
-    <button class="option-btn" onclick="setSugar('siu dai')">
-      <span class="emoji">🍬</span>
-      <span>Less Sugar<br><span class="subtext">(Siu Dai)</span></span>
-    </button>
-    <button class="option-btn" onclick="setSugar('normal')">
-      <span class="emoji">🍬🍬</span>
-      <span>Normal</span>
-    </button>
-    <button class="option-btn" onclick="setSugar('ga dai')">
-      <span class="emoji">🍬🍬🍬</span>
-      <span>More Sugar<br><span class="subtext">(Ga Dai)</span></span>
-    </button>
+
+  <button class="customize-btn" onclick="showCustomization()">Or Customize Your Order</button>
+
+  <div id="sugarOptions" class="sugar-options" style="display: none;">
+    <h2>Choose Sugar Level</h2>
+    <div class="button-grid">
+      <button class="option-btn" onclick="setSugar('kosong')">
+        <span class="emoji">❌</span><span>No Sugar<br><span class="subtext">(Kosong)</span></span>
+      </button>
+      <button class="option-btn" onclick="setSugar('siu dai')">
+        <span class="emoji">🍬</span><span>Less Sugar<br><span class="subtext">(Siu Dai)</span></span>
+      </button>
+      <button class="option-btn" onclick="setSugar('normal')">
+        <span class="emoji">🍬🍬</span><span>Normal</span>
+      </button>
+      <button class="option-btn" onclick="setSugar('ga dai')">
+        <span class="emoji">🍬🍬🍬</span><span>More Sugar<br><span class="subtext">(Ga Dai)</span></span>
+      </button>
+    </div>
   </div>
+
   <button class="back-btn" onclick="backStep()">⬅ Back</button>
 </div>
-<!--Step 2 Ends here-->
+<!-- Step 2 ends here -->
+
 
 <!--Step 3 Starts here-->
 <div class="step" id="step3">

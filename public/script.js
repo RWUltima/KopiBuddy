@@ -7,6 +7,12 @@ let drink = '',
 let currentStep = 1;
 const summary = [];
 
+function showCustomization() {
+  document.getElementById('sugarOptions').style.display = 'block';
+  document.querySelector('.customize-btn').style.display = 'none';
+}
+
+
 //for quick-add function and to reflect the previous drink in the button text
 function buildOrderSinglish(drink, sugar, strength, milkType, temp) {
   let order = drink;

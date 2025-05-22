@@ -417,4 +417,35 @@ a, a:visited, a:hover, a:active {
   line-height: 1.4;
 }
 
+.quick-btn {
+  background-color: #a8df8e;
+  color: #000;
+  font-weight: bold;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 12px;
+  width: 90%;
+  font-size: 1.2rem;
+  box-shadow: 0 0 8px #a8df8e;
+  animation: pulseGlow 2s infinite;
+  margin-bottom: 10px;
+}
+
+.customize-btn {
+  background-color: #fff;
+  color: #555;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 18px;
+  margin: 10px auto;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: block;
+  width: 90%;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0px #a8df8e; }
+  50% { box-shadow: 0 0 12px #a8df8e; }
+}
 
