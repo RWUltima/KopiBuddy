@@ -381,7 +381,7 @@ modal-content {
 
 .modal-content {
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-              url('/BG.jpg') no-repeat center center;
+              url('BG.jpg') no-repeat center center;
   background-size: cover;
   min-height: 300px;
   margin: 20% auto;
