@@ -182,6 +182,7 @@ h2 {
   .button-grid {
     justify-content: center;
     gap: 12px;
+    flex-direction: column;
   }
 
   .option-btn {
