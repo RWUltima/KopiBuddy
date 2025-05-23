@@ -1,9 +1,7 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
-background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), 
-              url('/FunanL6Pantry.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background: linear-gradient(180deg, #fffaf3 0%, #ffe5cd 100%);
   padding: 20px;
   text-align: center;
   color: #851212;
