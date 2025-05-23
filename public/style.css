@@ -144,7 +144,8 @@ h2 {
 #copyBtn {
   margin-top: 20px;
   padding: 12px 24px;
-  background: #eed6d3;
+  background: #412924;
+  color: #ffe5cd !important;
   border: none;
   border-radius: 12px;
   font-size: 16px;
@@ -154,7 +155,7 @@ h2 {
 }
 
 #copyBtn:hover {
-  background: #e8b4b8;
+  background: #61484a;
 }
 
 @keyframes fadeIn {
@@ -407,7 +408,7 @@ modal-content {
   margin-top: 16px;
   padding: 10px 18px;
   font-size: 1rem;
-  background-color: #e0e7ff;
+  background-color: #f3e9f7;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -448,7 +449,7 @@ modal-content {
 }
 
 .quick-btn {
-  background-color: #a8df8e;
+  background-color: #dcf5da;
   color: #fff;
   font-weight: bold;
   padding: 14px 20px;
@@ -461,7 +462,7 @@ modal-content {
 }
 
 .customize-btn {
-  background-color: #fff;
+  background-color: #fff3c2;
   color: #555;
   border: 2px solid #ccc;
   border-radius: 10px;
@@ -474,13 +475,13 @@ modal-content {
 }
 
 @keyframes pulseGlow {
-   0% { box-shadow: 0 0 0px rgba(76, 175, 80, 0.6); }
-  50% { box-shadow: 0 0 18px rgba(76, 175, 80, 0.4); }
-  100% { box-shadow: 0 0 0px rgba(76, 175, 80, 0.6); }
+   0% { box-shadow: 0 0 0px rgba(114, 207, 142, 0.768); }
+  50% { box-shadow: 0 0 18px rgba(2, 255, 36, 0.905); }
+  100% { box-shadow: 0 0 0px rgba(55, 255, 0, 0.768); }
 }
 
 .final-add-btn {
-  background-color: #6fe3a3;
+  background-color: #dcf5da;
   color: #000;
   font-weight: bold;
   padding: 12px 16px;
@@ -497,6 +498,7 @@ modal-content {
 
 .final-add-btn:hover {
   transform: scale(1.03);
+  background-color: #d1face;
 }
 
 @media (max-width: 600px) {

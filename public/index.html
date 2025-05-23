@@ -104,10 +104,12 @@
     </button>
   </div>
 
-  <button class="customize-btn" onclick="showCustomization()">Or Customize Your Order</button>
+  <button class="customize-btn" onclick="showCustomization()">Or Customise!
+    <br>🍬🍯🧊💪
+  </button>
 
   <div id="sugarOptions" class="sugar-options" style="display: none;">
-    <h2>Choose Sugar Level</h2>
+    <h2>Sugar Level?</h2>
     <div class="button-grid">
       <button class="option-btn" onclick="setSugar('kosong')">
         <span class="emoji">❌</span><span>No Sugar<br><span class="subtext">(Kosong)</span></span>
@@ -124,7 +126,7 @@
     </div>
   </div>
 
-  <button class="back-btn" onclick="backStep()">⬅ Back</button>
+  <button class="back-btn" onclick="backStep()">Back</button>
 </div>
 <!-- Step 2 ends here -->
 
@@ -138,7 +140,7 @@
       <br><span class="subtext"><em>(to Order Summary)</em></span>
     </button>
   </div>
-  <h2>or select Milk type?</h2>
+  <h2>what about Milk?</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setMilkType('o')">
       <span class="emoji">❌</span>
@@ -153,7 +155,7 @@
       <span>Evaporated Milk<br><span class="subtext">(C)</span></span>
     </button>
   </div>
-  <button class="back-btn" onclick="backStep()">⬅ Back</button>
+  <button class="back-btn" onclick="backStep()">Back</button>
 </div>
 <!--Step 3 ends here-->
 
@@ -166,7 +168,7 @@
       <br><span class="subtext"><em>(to Order Summary)</em></span>
     </button>
   </div>
-  <h2>what about Temperature?</h2>
+  <h2>Hot or Cold?</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setTemp('peng')">
       <span class="emoji">🧊</span>
@@ -181,7 +183,7 @@
       <span>Hot<br><span class="subtext">(normal)</span></span>
     </button>
   </div>
-  <button class="back-btn" onclick="backStep()">⬅ Back</button>
+  <button class="back-btn" onclick="backStep()">Back</button>
 </div>
 <!--Step 4 ends here-->
 
@@ -194,7 +196,7 @@
       <br><span class="subtext"><em>(to Order Summary)</em></span>
     </button>
   </div>
-  <h2>or select Strength?</h2>
+  <h2>Concentration?</h2>
   <div class="button-grid">
     <button class="option-btn" onclick="setStrength('po')">
       <span class="emoji">💪</span>
@@ -213,7 +215,7 @@
       <span>Stronger<br><span class="subtext">(Di Lo)</span></span>
     </button>
   </div>
-  <button class="back-btn" onclick="backStep()">⬅ Back</button>
+  <button class="back-btn" onclick="backStep()">Back</button>
 </div>
 <!--Step 5 ends here-->
 
@@ -229,8 +231,8 @@
   <h2>anything else?</h2>
   <input type="text" id="customNote" placeholder="e.g. extra ice" />
   <br/><br/>
-  <button class="final-add-btn" onclick="addToSummary()">Add to Order Summary</button>
-   <br><button class="back-btn" onclick="backStep()">⬅ Back</button><!--Back button added here as next line-->
+  <button class="final-add-btn" onclick="addToSummary()">Confirm to include the above?</button>
+   <br><button class="back-btn" onclick="backStep()">Back</button><!--Back button added here as next line-->
 </div><!--Step 6 ends here-->
 
     <div class="step" id="softDrinkInputStep"><!--Step 7 or Soft Drink option starts here-->
@@ -245,8 +247,8 @@
   <div id="summary">
     <h2>Order Summary</h2>
     <div id="orders"></div>
-    <button id="copyBtn" onclick="copySummary()">Copy these Orders!
-      <br><span class="subtext"><em>(to paste on whatsapp)</em></span></button>
+    <button id="copyBtn" onclick="copySummary()">Click to copy!
+      <br>(to paste on whatsapp)</button>
   </div>
 
   <script src="script.js"></script>
