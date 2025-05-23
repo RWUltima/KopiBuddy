@@ -1,7 +1,7 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
-  background: linear-gradient(180deg, #fffaf3 0%, #fcefe3 100%);
+  background: linear-gradient(180deg, #fffaf3 0%, #ffe5cd 100%);
   padding: 20px;
   text-align: center;
   color: #851212;
@@ -435,15 +435,14 @@ a, a:visited, a:hover, a:active {
 
 .quick-btn {
   background-color: #a8df8e;
-  color: #000;
+  color: #fff;
   font-weight: bold;
   padding: 14px 20px;
   border: none;
   border-radius: 12px;
   width: 90%;
   font-size: 1.2rem;
-  box-shadow: 0 0 8px #a8df8e;
-  animation: pulseGlow 2s infinite;
+  animation: pulseGlow 2.5s infinite;
   margin-bottom: 10px;
 }
 
@@ -461,8 +460,9 @@ a, a:visited, a:hover, a:active {
 }
 
 @keyframes pulseGlow {
-  0%, 100% { box-shadow: 0 0 0px #a8df8e; }
-  50% { box-shadow: 0 0 12px #a8df8e; }
+   0% { box-shadow: 0 0 0px rgba(76, 175, 80, 0.6); }
+  50% { box-shadow: 0 0 18px rgba(76, 175, 80, 0.4); }
+  100% { box-shadow: 0 0 0px rgba(76, 175, 80, 0.6); }
 }
 
 .final-add-btn {
