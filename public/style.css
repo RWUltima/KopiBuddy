@@ -510,3 +510,11 @@ a, a:visited, a:hover, a:active {
   border-color: #a3c9a8;
   box-shadow: 0 0 0 3px rgba(163, 201, 168, 0.25);
 }
+
+@media (max-width: 600px) {
+  #softDrinkName {
+    font-size: 1.1rem;
+    padding: 16px 18px;
+    width: 90%;
+  }
+}
