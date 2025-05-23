@@ -201,7 +201,7 @@ function copySummary() {
     .join('\n');
 
   navigator.clipboard.writeText(text);
-  alert('Copied to the clipboard! You can paste now paste these orders anywhere (e.g. WhatsApp to a friend!)');
+  alert('Copied to the clipboard! You can now paste these orders anywhere (e.g. in WhatsApp to a friend!)');
 }
 
 function resetWizard() {
