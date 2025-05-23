@@ -15,27 +15,37 @@ function showCustomization() {
 
 //for quick-add function and to reflect the previous drink in the button text
 function buildOrderSinglish(drink, sugar, strength, milkType, temp) {
-  let order = drink;
+  let order = '';
 
-  if (milkType === 'o') {
-    order += ' o';
-  } else if (milkType === 'c') {
-    order += ' c';
+  // Capitalize drink name
+  if (drink) {
+    order += drink.charAt(0).toUpperCase() + drink.slice(1);
   }
 
+  // Milk type logic (capitalize 'O' if alone)
+  if (milkType === 'o') {
+    order += ' O';
+  } else if (milkType === 'c') {
+    order += ' C';
+  }
+
+  // Strength
   if (strength === 'po') order += ' po';
   else if (strength === 'gau') order += ' gau';
   else if (strength === 'di lo') order += ' di lo';
 
+  // Sugar
   if (sugar === 'kosong') order += ' kosong';
   else if (sugar === 'siu dai') order += ' siu dai';
   else if (sugar === 'ga dai') order += ' ga dai';
 
+  // Temperature
   if (temp === 'pua sio') order += ' pua sio';
   else if (temp === 'peng') order += ' peng';
 
   return order.trim();
 }
+
 
 function nextStep(selectedDrink) {
   drink = selectedDrink.toLowerCase();
