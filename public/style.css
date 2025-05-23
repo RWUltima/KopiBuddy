@@ -322,9 +322,9 @@ a, a:visited, a:hover, a:active {
   background-color: rgba(0,0,0,0.4);
 }
 
-.modal-content {
+modal-content {
   background: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)),
-              url('/BG.jpg') center center / cover no-repeat;
+              url('/BG.jpg') center center / cover no-repeat
   margin: 20% auto;
   padding: 20px;
   border-radius: 12px;
@@ -333,6 +333,11 @@ a, a:visited, a:hover, a:active {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   text-align: left;
   color: #333;
+}
+
+/BG.jpg {
+  height: 50%;
+  width:50%
 }
 
 .close-btn {
