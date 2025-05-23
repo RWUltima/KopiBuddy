@@ -130,6 +130,7 @@ function addToSummary() {
   if (note) order += ' (' + note + ')';
 
   summary.push(order);
+  summary.sort();
   updateOrders();
   resetWizard();
 }
@@ -162,6 +163,7 @@ function updateOrders() {
     addBtn.className = 'duplicate-btn';
     addBtn.onclick = () => {
       summary.push(order);
+      summary.sort();
       updateOrders();
     };
 
@@ -172,6 +174,7 @@ function updateOrders() {
       const index = summary.indexOf(order);
       if (index !== -1) {
         summary.splice(index, 1);
+        summary.sort();
         updateOrders();
       }
     };
