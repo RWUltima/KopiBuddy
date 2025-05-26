@@ -168,7 +168,7 @@ function updateOrders() {
     };
 
     const delBtn = document.createElement('button');
-    delBtn.textContent = '❌';
+    delBtn.textContent = '➖';
     delBtn.className = 'delete-btn';
     delBtn.onclick = () => {
       const index = summary.indexOf(order);
