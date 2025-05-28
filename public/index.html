@@ -89,7 +89,7 @@
     </button>
     <button class="option-btn" onclick="askSoftDrink()">
       <span class="emoji left">🥤</span>
-      <span class="label">Soft Drink</span>
+      <span class="label">Others</span>
     </button>
   </div>
 </div><!--Step 1 Ends here-->
@@ -236,8 +236,8 @@
 </div><!--Step 6 ends here-->
 
     <div class="step" id="softDrinkInputStep"><!--Step 7 or Soft Drink option starts here-->
-      <h2>Enter Soft Drink Name</h2>
-      <input type="text" id="softDrinkName" placeholder="e.g. Coke Zero" />
+      <h2>Enter Drink Name</h2>
+      <input type="text" id="softDrinkName" placeholder="e.g. Coke Zero, Yuan Yang, etc" />
       <br/><br/>
       <button class="final-add-btn" onclick="finalizeSoftDrinkManual()">Add to Order</button>
       <br><button class="back-btn" onclick="showStep('step1')">⬅ Back</button><!--Added this back button. Because soft drink input isn’t part of the normal step flow (it jumps from Step 1 to a special step), currentStep may not track it properly. Using showStep('step1') directly ensures it reliably jumps back to the main drink selection page.-->
